@@ -1,0 +1,81 @@
+/*reset  css*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    /* kiểu chữ */
+}
+
+
+/* 
+1. vị trí
+2. Kích thước
+3. Màu sắc
+4. Kiểu dáng(withd, height) */
+
+#main {}
+
+#header {
+    height: 46px;
+    background-color: #000;
+}
+
+#nav li {
+    display: inline-block;
+    /* từ hàng dọc thành sang cùng 1 hàng*/
+    position: relative;
+}
+
+#nav .subnav {
+    /* display: none; */
+    /* ẩn đi*/
+    position: absolute;
+    background-color: #fff;
+}
+
+#nav .subnav a {
+    color: #000;
+}
+
+#nav>li>a {
+    color: #fff;
+}
+
+#nav li a {
+    text-decoration: none;
+    /*bỏ gạch chân*/
+    line-height: 46px;
+    /*cái mà mình di chuyển tô đậm ở chữ cho bằng chiều cao header chứa nó*/
+    padding: 0 24px;
+    /* trên dưới trái phải */
+    display: block;
+    transition: all 0.3s ease-in-out 0s;
+    /*bấm vào mượn hơn*/
+}
+
+#nav>li:hover>a {
+    /* chỉ tác động thẻ cấp 1 trực tiếp*/
+    color: #000;
+    background-color: #ccc;
+}
+
+
+/* #nav li:hover a {
+    color: #000;
+    background-color: #ccc;
+    display: inline-block;
+} */
+
+#slider {
+    min-height: 500px;
+    background-color: #333;
+}
+
+#content {}
+
+#footer {}
